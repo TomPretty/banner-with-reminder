@@ -1,24 +1,12 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Banner1 from "./components/Banner1";
+import Banner2 from "./components/Banner2";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Banner1 copy={{ header: "This is Banner1", body: "This is it's body" }} />
+      <Banner2 copy={{ header: "This is Banner2", body: "This is it's body" }} />
     </div>
   );
 }
